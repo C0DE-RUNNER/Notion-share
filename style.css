@@ -1,0 +1,90 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .collapsing {
+    transition: none;
+  }
+  
+  .share-btn {
+    padding:  8px 25px 8px 8px;
+    background-image: url(./Assets/share-icon.png);
+    background-position: right;
+    background-color: black;
+    background-repeat: no-repeat;
+    color: white;
+  }
+
+  /* .card {
+    width: 18rem;
+  } */
+  
+  li.shareToWeb {
+    padding: 0;
+  }
+  
+  li.shareToWeb:hover {
+    background-color: #f0f0f5;
+  }
+  
+  .fa-globe {
+    padding: 0.5rem;
+    padding-left: 1rem;
+    font-size: 2.5rem;
+  }
+  
+  /* using FLEX */
+  li:nth-of-type(2) {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .btn-primary {
+    width: 100px;
+    height: auto;
+  }
+  
+  .form-control {
+    background-color: #f7f7fb;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* remove the default arrow from people/group selection*/
+  div.input2 > .dropdown.icon {
+    display: none;
+  }
+  
+  .dropdown {
+    border: 0px !important;
+  }
+  
+  div.modal-2 > ul > li:first-child {
+    display: flex;
+  }
+  
+  .select-1 {
+    width: 600px !important;
+  }
+  
+  .select-2 {
+    width: 200px !important;
+  }
+  
+  .invite2 {
+    width: 60px !important;
+  }
+  
+  #accessList {
+    list-style-type: none;
+  }
+  
+  #accessList span {
+    padding: 8px;
+    display: block;
+  }
+  
