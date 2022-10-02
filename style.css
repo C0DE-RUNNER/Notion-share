@@ -59,11 +59,31 @@ html, body {
     width: 100px;
     height: auto;
   }
+
+  .copy-btn {
+    width: fit-content;
+  }
   
+  .info-btn {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: space-between;
+  }
+
   .form-control {
     background-color: #f7f7fb;
   }
   
+  .web-share-main{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form-switch {
+    font-size: 20px;
+    margin-top: 12px;
+  }
+
   .hidden {
     display: none;
   }

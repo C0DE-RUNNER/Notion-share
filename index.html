@@ -32,50 +32,42 @@
         </button>
 
         <div class="card collapse my-2 modal-1" id="shareModal">
+           <div class="web-share-main">
             <div>
                 <span> <i class="fa fa-globe" aria-hidden="true"></i></span>
-            <div class = "web-share">
-              <p class = "web-share-h5">Share on web</p>
-              <p class="web-share-p">Publish and share link with anyone</p>
+                <div class = "web-share">
+                  <p class = "web-share-h5">Share on web</p>
+                  <p class="web-share-p">Publish and share link with anyone</p>
+                </div>
             </div>
-            
-        </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                </div>
+           </div>
           <ul class="list-group list-group-flush">
             <li class="list-group-item">
               <input type="email" class="form-control input1" placeholder="Add emails or people" />
               <button class="btn btn-primary">Invite</button>
             </li>
             <li id="accessList"></li>
-            <li class="list-group-item">A third item</li>
           </ul>
+          <div class="info-btn">
+            <button class="btn btn-light copy-btn" data-bs-toggle="collapse" href="#shareModal" role="button">
+                <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                Learn about sharing
+            </button>            
+            <button class="btn btn-light copy-btn" data-bs-toggle="collapse" href="#shareModal" role="button">
+                <i class="fa fa-link" aria-hidden="true"></i>
+                Copy Link
+            </button>
+        </div>
         </div>
 
         <!-- Adding people/group screen -->
         <div class="card collapse my-2 modal-2 hidden" id="shareModal">
           <ul class="list-group list-group-flush">
             <li class="list-group-item">
-              <!-- <select
-                  class="ui fluid search dropdown input2 select-1"
-                  multiple=""
-                  id="multi-select"
-                >
-                  <option value="">Select your favorite pokemon!</option>
-                  <option value="Pika">Pikachu</option>
-                  <option value="Bulb">Bulbasaur</option>
-                  <option value="Char">Charmender</option>
-                  <option value="Chari">Charizard</option>
-                  <option value="Meow">Meowth</option>
-                  <option value="Psy">Psyduck</option>
-                  <option value="Squi">Squirtle</option>
-                </select>
-
-                <select class="ui fluid dropdown select-2">
-                  <option value="full" selected>Full access</option>
-                  <option value="edit">Can edit</option>
-                  <option value="view">Can view</option>
-                  <option value="none">No access</option>
-                </select> -->
-
+             
               <select class="ui fluid search dropdown input2 select-1" multiple="" id="multi-select">
                 <option value="">Select your favorite pokemon!</option>
                 <option value="Pika">Pikachu</option>
