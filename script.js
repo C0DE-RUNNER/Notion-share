@@ -8,22 +8,10 @@ inputField1.addEventListener("click", displayShareForm);
 shareButton.addEventListener("click", hideShareForm);
 
 function displayShareForm() {
-  //   $("#multi-select").dropdown("clear");
-  //   $(".ui.dropdown").dropdown("restore");
+  // $("#multi-select").dropdown("clear");
+  //   document.querySelector(".select-1"). = -1;
   modal1.classList.add("hidden");
   modal2.classList.remove("hidden");
-  //   document.querySelector(".select-1").classList.add("active");
-  //   document.querySelector(".select-1").classList.add("visible");
-  document.querySelector(".menu.transition").classList.toggle("hidden");
-  document.querySelector(".menu.transition").classList.toggle("visible");
-  if (
-    document.querySelector(".menu.transition").classList.contains("visible")
-  ) {
-    document.querySelector(".menu.transition").style.display =
-      "block !important";
-  }
-
-  //   textbox.scrollIntoView();
 }
 
 // hide the people/group list for click anywhere on the screen
@@ -44,7 +32,7 @@ let mainList = {};
 $("#multi-select").dropdown("setting", "onChange", function(values) {
   console.log(...values);
   // get the permission
-  let permission = document.querySelector(".select-2 > select");
+  let permission = document.querySelector(".select-2");
   let value = permission.value;
 
   // if people are added and then removed, then update the accessList accordingly
@@ -65,8 +53,9 @@ $("#multi-select").dropdown("setting", "onChange", function(values) {
 // On the "invite (2)" button click, return to modal-1 and display the accessList with permission
 document.querySelector(".invite2").addEventListener("click", () => {
   // get the permission
-  let permission = document.querySelector(".select-2 > select");
+  let permission = document.querySelector(".select-2");
   let value = permission.value;
+  console.log(value);
 
   // update the permission for people/group
   for (let key in accessList) {
@@ -84,23 +73,42 @@ function displayList() {
   let li = document.getElementById("accessList");
   for (let key in accessList) {
     mainList[key] = accessList[key];
-    // // check if the current value has already been appended to the main view
-    // if (mainList[key]) {
-    // 	// update the permission
-    // 	mainList[key] = accessList[key];
-    // }
-    // else {
-    // 	// add the new people/group
-    // 	mainList[key] =
-    // }
   }
 
   // clear all the li->span firstly
   li.innerHTML = "";
   // loop over the people/group and append to the main view
   for (let key in mainList) {
-    let span = document.createElement("span");
-    span.innerText = `${key} -> ${mainList[key]}`;
-    li.appendChild(span);
+    // if the permission has been updated to "No access" => remove entry from mainList
+    if (mainList[key] == "none") {
+      delete mainList[key];
+    } else {
+      let div = document.createElement("div");
+      let span = document.createElement("span");
+      span.innerText = `${key}`;
+      div.appendChild(span);
+
+      //Create array of options to be added
+      let accessTexts = ["Full access", "Can edit", "view", "No access"];
+      let accessValues = ["full", "edit", "view", "none"];
+
+      //Create and append select list
+      let selectList = document.createElement("select");
+      selectList.classList = "form-select select-3";
+      div.appendChild(selectList);
+
+      //Create and append the options
+      for (let i = 0; i < accessTexts.length; i++) {
+        let option = document.createElement("option");
+        option.value = accessValues[i];
+        option.text = accessTexts[i];
+        if (mainList[key] === accessValues[i]) {
+          option.setAttribute("selected", "");
+        }
+        selectList.appendChild(option);
+      }
+
+      li.appendChild(div);
+    }
   }
 }

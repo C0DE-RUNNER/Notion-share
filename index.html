@@ -25,15 +25,22 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8 col-lg-6">
+        
         <button class="btn btn-light share-btn" data-bs-toggle="collapse" href="#shareModal" role="button">
           Share
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
         </button>
 
         <div class="card collapse my-2 modal-1" id="shareModal">
+            <div>
+                <span> <i class="fa fa-globe" aria-hidden="true"></i></span>
+            <div class = "web-share">
+              <p class = "web-share-h5">Share on web</p>
+              <p class="web-share-p">Publish and share link with anyone</p>
+            </div>
+            
+        </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item shareToWeb">
-              <i class="fa fa-globe" aria-hidden="true"></i>
-            </li>
             <li class="list-group-item">
               <input type="email" class="form-control input1" placeholder="Add emails or people" />
               <button class="btn btn-primary">Invite</button>
@@ -47,21 +54,45 @@
         <div class="card collapse my-2 modal-2 hidden" id="shareModal">
           <ul class="list-group list-group-flush">
             <li class="list-group-item">
-              <div class="ui fluid search dropdown input2 select-1 selection multiple active visible">
-                <i class="dropdown icon"></i><input class="search" autocomplete="off" tabindex="0" /><span
-                  class="sizer"></span>
-                <div class="default text">Select your favorite pokemon!</div>
-                <div class="menu transition hidden" tabindex="-1">
-                  <div class="item selected" data-value="Pika">Pikachu</div>
-                  <div class="item" data-value="Bulb">Bulbasaur</div>
-                  <div class="item" data-value="Char">Charmender</div>
-                  <div class="item" data-value="Chari">Charizard</div>
-                  <div class="item" data-value="Meow">Meowth</div>
-                  <div class="item" data-value="Psy">Psyduck</div>
-                  <div class="item" data-value="Squi">Squirtle</div>
-                </div>
-              </div>
+              <!-- <select
+                  class="ui fluid search dropdown input2 select-1"
+                  multiple=""
+                  id="multi-select"
+                >
+                  <option value="">Select your favorite pokemon!</option>
+                  <option value="Pika">Pikachu</option>
+                  <option value="Bulb">Bulbasaur</option>
+                  <option value="Char">Charmender</option>
+                  <option value="Chari">Charizard</option>
+                  <option value="Meow">Meowth</option>
+                  <option value="Psy">Psyduck</option>
+                  <option value="Squi">Squirtle</option>
+                </select>
 
+                <select class="ui fluid dropdown select-2">
+                  <option value="full" selected>Full access</option>
+                  <option value="edit">Can edit</option>
+                  <option value="view">Can view</option>
+                  <option value="none">No access</option>
+                </select> -->
+
+              <select class="ui fluid search dropdown input2 select-1" multiple="" id="multi-select">
+                <option value="">Select your favorite pokemon!</option>
+                <option value="Pika">Pikachu</option>
+                <option value="Bulb">Bulbasaur</option>
+                <option value="Char">Charmender</option>
+                <option value="Chari">Charizard</option>
+                <option value="Meow">Meowth</option>
+                <option value="Psy">Psyduck</option>
+                <option value="Squi">Squirtle</option>
+              </select>
+
+              <select class="form-select select-2">
+                <option value="full">Full access</option>
+                <option value="edit">Can edit</option>
+                <option value="view">Can view</option>
+                <option value="none">No access</option>
+              </select>
               <button class="btn btn-primary invite2">Invite</button>
             </li>
 
