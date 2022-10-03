@@ -1,6 +1,9 @@
 # Notion Share
 A reusable share widget like that of Notion. 
 
+**Link to Project**  https://notionshare.netlify.app/
+
+
 **Features** 
 - Responsive and re-usable Notion share widget
 - Share to individuals, groups, or everyone.
@@ -8,7 +11,6 @@ A reusable share widget like that of Notion.
 - Manage access permissions of individuals and groups.
 - Update access permissions as many times as needed.
 
-**Link to Project**  https://notionshare.netlify.app/
 
 **Screenshots**
 
