@@ -47,7 +47,6 @@ $(".ui.dropdown").dropdown({
 
 // On people/group selection
 $("#multi-select").dropdown("setting", "onChange", function(values) {
-  console.log(...values);
   // get the permission
   let permission = document.querySelector(".select-2").value;
 
@@ -59,7 +58,6 @@ $("#multi-select").dropdown("setting", "onChange", function(values) {
     accessList[el] = permission;
   });
 
-  console.log(accessList);
 });
 
 // On the "invite (2)" button click, return to modal-1 and display the accessList with permission
@@ -67,7 +65,6 @@ document.querySelector(".invite-2").addEventListener("click", () => {
   // get the permission
   let permission = document.querySelector(".select-2");
   let value = permission.value;
-  console.log(value);
 
   // update the permission for people/group
   for (let key in accessList) {
@@ -134,7 +131,6 @@ document.getElementById("accessList").addEventListener("change", function(e) {
     // update the permission for current individual/group in the mainList
     accessList[key] = value;
     // mainList[key] = value;
-    console.log(key, value, mainList);
 
     // re-render the list
     displayList();
