@@ -2,6 +2,7 @@
 A reusable share widget like that of Notion. 
 
 **Link to Project**  https://notionshare.netlify.app/
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d45cca2d-36cf-495a-9740-961b81f352d1/deploy-status)](https://app.netlify.com/sites/notionshare/deploys)
 
 
 **Features** 
@@ -34,7 +35,3 @@ A reusable share widget like that of Notion.
 - Add profile image to the people and groups.
 - List info can be stored and fetched from the backend. 
 
-
-
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d45cca2d-36cf-495a-9740-961b81f352d1/deploy-status)](https://app.netlify.com/sites/notionshare/deploys)
