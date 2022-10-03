@@ -14,6 +14,17 @@ A reusable share widget like that of Notion.
 
 **Screenshots**
 
+![alt tag](./assets/img/page1.png)
+![alt tag](./assets/img/page2.png)
+![alt tag](./assets/img/page3.png)
+![alt tag](./assets/img/page4.png)
+![alt tag](./assets/img/page5.png)
+![alt tag](./assets/img/page6.png)
+![alt tag](./assets/img/page7.png)
+![alt tag](./assets/img/page8.png)
+
+
+
 **How to run**
 - Clone the project.
 - Run in Vscode or any IDE of your preference.
