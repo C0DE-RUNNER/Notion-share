@@ -41,11 +41,11 @@ html, body {
     margin-left: 60px;
   }
   
-  .web-share-h5 {
+  .title {
     margin-bottom: 0px;
   }
 
-  .web-share-p {
+  .subtitle {
     font-size: 12px;
     color: gray;
   }
@@ -77,11 +77,18 @@ html, body {
   .web-share-main{
     display: flex;
     justify-content: space-between;
+    margin-left: 10px;
   }
 
   .form-switch {
     font-size: 20px;
     margin-top: 12px;
+  }
+
+  .disabled {
+    font-size: larger !important;
+    font-weight: 900 !important;
+    color: #000 !important;
   }
 
   .hidden {
@@ -113,7 +120,7 @@ html, body {
     height: 36px !important;
   }
   
-  .invite2 {
+  .invite-2 {
     width: 60px !important;
     height: 36px !important;
   }
@@ -127,7 +134,7 @@ html, body {
     /* display: block; */
   }
 
-  #accessList div {
+  #accessList  div {
     display: flex;
     padding: 8px;
   }
@@ -137,5 +144,21 @@ html, body {
     justify-content: space-between;
   }
 
+#oslash-everyone {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
 
+#oslash-everyone .select-3, .select-3 {
+    height: 32px !important;
+    width: 140px !important;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 470px) {
+    div.modal-2 > ul > li:first-child {
+      flex-direction: column;
+    }
+  }
   

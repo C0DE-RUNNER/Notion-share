@@ -36,8 +36,8 @@
             <div>
                 <span> <i class="fa fa-globe" aria-hidden="true"></i></span>
                 <div class = "web-share">
-                  <p class = "web-share-h5">Share on web</p>
-                  <p class="web-share-p">Publish and share link with anyone</p>
+                  <p class = "title">Share on web</p>
+                  <p class="subtitle">Publish and share link with anyone</p>
                 </div>
             </div>
                 <div class="form-check form-switch">
@@ -47,19 +47,43 @@
           <ul class="list-group list-group-flush">
             <li class="list-group-item">
               <input type="email" class="form-control input1" placeholder="Add emails or people" />
-              <button class="btn btn-primary">Invite</button>
+              <button class="btn btn-primary invite-1">Invite</button>
+            </li>
+            <li class="list-group-item">
+                <div id="oslash-everyone">
+                    <span><img src="./Assets/oslash.png" width="40" height="40" alt="oslash-logo"></span>
+                    <div>
+                      <p class = "title">Everyone at OSalsh</p>
+                      <p class="subtitle">25 workspace members</p>
+                    </div>
+                    <select class="form-select select-3">
+                        <option value="full">Full access</option>
+                        <option value="edit">Can edit</option>
+                        <option value="view">Can view</option>
+                        <option value="none" selected>No access</option>
+                      </select>
+                </div>
             </li>
             <li id="accessList"></li>
           </ul>
           <div class="info-btn">
-            <button class="btn btn-light copy-btn" data-bs-toggle="collapse" href="#shareModal" role="button">
-                <i class="fa fa-question-circle-o" aria-hidden="true"></i>
-                Learn about sharing
-            </button>            
-            <button class="btn btn-light copy-btn" data-bs-toggle="collapse" href="#shareModal" role="button">
-                <i class="fa fa-link" aria-hidden="true"></i>
-                Copy Link
-            </button>
+            <a
+            class="btn btn-light disabled"
+            style="font-size: 14px !important"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+            Learn about sharing
+          </a>
+          <a
+            class="btn btn-light copy-btn"
+            data-bs-toggle="collapse"
+            href="https://www.oslash.com/"
+          >
+            <i class="fa fa-link" aria-hidden="true"></i>
+            Copy Link
+          </a>
         </div>
         </div>
 
@@ -69,15 +93,21 @@
             <li class="list-group-item">
              
               <select class="ui fluid search dropdown input2 select-1" multiple="" id="multi-select">
-                <option value="">Select your favorite pokemon!</option>
-                <option value="Pika">Pikachu</option>
-                <option value="Bulb">Bulbasaur</option>
-                <option value="Char">Charmender</option>
-                <option value="Chari">Charizard</option>
-                <option value="Meow">Meowth</option>
-                <option value="Psy">Psyduck</option>
-                <option value="Squi">Squirtle</option>
-              </select>
+                <option value="">Search emails, name, or groups</option>
+                <option value="person" class="disabled" disabled>
+                  Select a person
+                </option>
+                <option value="Wade Cooper">Wade Cooper</option>
+                <option value="Arlene Mccoy">Arlene Mccoy</option>
+                <option value="group" class="disabled" disabled>
+                  Select a group
+                </option>
+                <option value="Product">Product</option>
+                <option value="Engineering">Engineering</option>
+                <option value="group" class="disabled" disabled>
+                    Others...
+                  </option>
+             </select>
 
               <select class="form-select select-2">
                 <option value="full">Full access</option>
@@ -85,11 +115,23 @@
                 <option value="view">Can view</option>
                 <option value="none">No access</option>
               </select>
-              <button class="btn btn-primary invite2">Invite</button>
-            </li>
 
-            <li class="list-group-item">A third item</li>
+              <button class="btn btn-primary invite-2">Invite</button>
+           </li>
+
+            
           </ul>
+          <div class="info-btn">
+            <a
+                class="btn btn-light disabled"
+                style="font-size: 14px !important"
+                data-bs-toggle="collapse"
+                href="#"
+              >
+                <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                Learn about sharing
+              </a>
+        </div>  
         </div>
       </div>
     </div>
