@@ -4,7 +4,7 @@ A reusable share widget like that of Notion.
 **Features** 
 
 
-**Link to Project** 
+**Link to Project**  https://notionshare.netlify.app/
 
 **Screenshots**
 
