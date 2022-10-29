@@ -31,7 +31,7 @@ A responsive & reusable share widget like that of Notion.
 - Run the project in the Browser of your preference.
 
 
-**Optimizations
+**Optimizations**
 - Add profile image to the people and groups.
 - List info can be stored and fetched from the backend. 
 
