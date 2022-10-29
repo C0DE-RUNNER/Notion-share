@@ -1,5 +1,5 @@
 # Notion Share
-A responsive & reusable share widget like that of Notion. 
+A responsive & reusable share widget like that of . 
 
 **Link to Project**  https://notionshare.netlify.app/
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d45cca2d-36cf-495a-9740-961b81f352d1/deploy-status)](https://app.netlify.com/sites/notionshare/deploys)
